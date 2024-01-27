@@ -1,0 +1,16 @@
+.iti {
+  width: 100%;
+}
+
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type="text"],
+.iti--allow-dropdown input[type="tel"],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type="text"],
+.iti--separate-dial-code input[type="tel"] {
+ 
+}
+
+.row {
+  --bs-gutter-x: 0;
+}

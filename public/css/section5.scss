@@ -1,0 +1,242 @@
+
+// progress bar appearance
+$background-color:#000000;
+$bar-empty:#55708d;
+$bar-color:#cfd6dd;
+
+$glow-width:60px;
+$glow-radius:10px;
+$glow-color:#04bfff;
+.section5 {
+    .animation-title-achievement {
+        color: #fff;
+        overflow: hidden;
+      }
+      .animation-title-achievement {
+        margin-top: 30px;
+        margin-bottom: -20px;
+        padding: 0 100px;
+        display: flex;
+        width: 100%;
+        align-items: start;
+        justify-content: start;
+      }
+      .animation-title-achievement .title-achievement {
+        background: 50% 100% / 50% 50% no-repeat
+                radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 50px;
+        font-family: Roboto;
+        animation: reveal 3000ms ease-in-out forwards 200ms,
+                  glow 2500ms linear infinite 2000ms;
+      }
+}
+.section5-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 100px;
+}
+.progress-bar {
+  height:3px;
+  width:100%;
+  position:relative;
+  z-index:10;
+
+  background-color:$bar-empty;
+  
+  .progress {
+    position:relative;
+    height:100%;
+    background-color:$bar-color;
+    transition:width 0.5s ease-out;
+    border-radius: 0px 2px 2px 0px;
+  }
+  .glow {
+    width:$glow-width;
+    max-width:100%;
+    height:100%;
+    float:right;
+
+  }
+  .glow::before,
+  .glow::after {
+    content:'';
+    display:block;
+    position:relative;
+    border-radius:0px 2px 2px 0px;
+  }
+  .glow::before {
+    background:transparent;
+    height:100%;
+    box-shadow:0px 0px $glow-radius $bar-color, 0px 0px $glow-radius $glow-color;
+    z-index:-5;
+  }
+  .glow::after {
+    background:linear-gradient(to right, $background-color 0%, transparent 100%);
+    height:calc(100% + #{$glow-radius} + #{$glow-radius});
+    width:calc(100% + #{$glow-radius});
+    top:(-$glow-radius);
+    left:(-$glow-radius);
+    z-index:-3;
+  }
+}
+
+// messages 
+.label {
+  font-family:Roboto;
+  color:white;
+  text-shadow:0px 0px 2px $bar-color;
+  font-size:24px;
+}
+
+// animations
+.fill-1 {
+  animation:fill-1 0.5s ease-out 0s;
+  animation-fill-mode:forwards;    
+  width:0%;
+}
+.fill-2 {
+  animation:fill-2 0.5s ease-out 0.5s;
+  animation-fill-mode:forwards;   
+  width:0%;
+}
+.fill-3 {
+  animation:fill-3 0.5s ease-out 1s;
+  animation-fill-mode:forwards;   
+  width:0%;
+}
+.fill-4 {
+    animation: fill-4 0.5s ease-out 1.5s;
+    animation-fill-mode: forwards;
+    width: 0%;
+  }
+  
+  .fill-5 {
+    animation: fill-5 0.5s ease-out 2s;
+    animation-fill-mode: forwards;
+    width: 0%;
+  }
+  
+  .fill-6 {
+    animation: fill-6 0.5s ease-out 2.5s;
+    animation-fill-mode: forwards;
+    width: 0%;
+  }
+
+    .fill-7 {
+        animation: fill-7 0.5s ease-out 3s;
+        animation-fill-mode: forwards;
+        width: 0%;
+    }
+.fill-8 {
+    animation: fill-8 0.5s ease-out 3.5s;
+    animation-fill-mode: forwards;
+    width: 0%;
+}
+  
+@keyframes fill-1 {
+  0% { width:0%; }
+  100% { width:85%; }
+}
+@keyframes fill-2 {
+  0% { width:0%; }
+  100% { width:60%; }
+}
+@keyframes fill-3 {
+  0% { width:0%; }
+  100% { width:50%; }
+}
+@keyframes fill-4 {
+    0% { width: 0%; }
+    100% { width: 80%; }
+  }
+  
+  @keyframes fill-5 {
+    0% { width: 0%; }
+    100% { width: 50%; }
+  }
+  
+  @keyframes fill-6 {
+    0% { width: 0%; }
+    100% { width: 90%; }
+  }
+@keyframes fill-7 {
+    0% { width: 0%; }
+    100% { width: 50%; }
+  }
+@keyframes fill-8 {
+    0% { width: 0%; }
+    100% { width: 50%; }
+  }
+.label.one {
+  animation:label 0.5s ease-out 0s;
+  animation-fill-mode:forwards;   
+  opacity:0;
+}
+.label.two {
+  animation:label 0.5s ease-out 0.5s;
+  animation-fill-mode:forwards;   
+  opacity:0;
+}
+.label.three {
+  animation:label 0.5s ease-out 1.0s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+.label.four {
+    animation:label 0.5s ease-out 1.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+.label.five {
+    animation:label 0.5s ease-out 2s;
+    animation-fill-mode:forwards;   
+    opacity:0;
+  }
+  .label.six {
+    animation:label 0.5s ease-out 2.5s;
+    animation-fill-mode:forwards;   
+    opacity:0;
+  }
+  .label.seven {
+    animation:label 0.5s ease-out 3.0s;
+    animation-fill-mode:forwards;
+    opacity:0;
+  }
+  .label.eight {
+      animation:label 0.5s ease-out 3.5s;
+      animation-fill-mode:forwards;
+      opacity:0;
+  }
+@keyframes label {
+  0% { opacity:0; transform:translateY(10px); }
+  100% { opacity:0.9; transform:translateY(0); }
+}
+
+// demo layout
+.section5 { width:100%; height:100%; margin:0; background-color:$background-color; box-sizing:border-box; }
+.section5 { 
+  padding:60px 20px;
+  
+  .wrapper {
+    width: 100%;
+    
+    .container {
+      padding:20px;
+      > * {
+        margin-bottom:10px;
+      }
+    } 
+  }
+}
+@keyframes reveal {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
