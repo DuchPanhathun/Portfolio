@@ -13,11 +13,11 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import IconButton from '@mui/material/IconButton';
 import MailIcon from '@mui/icons-material/Mail';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import List_img from "../img/list.svg";
-import Home from "../img/home-icon-silhouette.svg";
-import Experience from "../img/user.svg";
-import Achieviment from "../img/medal.svg";
-import Contact from "../img/contact-us.svg"
+import List_img from "/img/list.svg";
+import Home from "/img/home-icon-silhouette.svg";
+import Experience from "/img/user.svg";
+import Achieviment from "/img/medal.svg";
+import Contact from "/img/contact-us.svg"
 
 const Nav = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
