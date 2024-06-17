@@ -2,11 +2,19 @@
 .navbar {
     position: fixed;
     z-index: 10000;
+    * {
+        font-family: Roboto;
+    }
+}
+
+.css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+    background: rgba(255, 255, 255, 0.169)!important; /* White with 30% opacity */
+    backdrop-filter: blur(10px)!important;
 }
 .nav-container {
     display: flex;
     flex-direction: row;
-    padding: 20px 100px 10px 100px;
+    margin: 2% 5%;
     position: fixed;
     .left-side {
         display: flex;
@@ -36,7 +44,9 @@
         align-items: center;
         gap: 20px;
         position: fixed;
-        right: 100px;
+        .for-screen-1100 {
+            display: none;
+        }
         .nav-item {
             font-family: Roboto;
             font-size: 15px;
@@ -111,6 +121,19 @@
         }
     }
 }
+
+@media (max-width: 1100px) {
+    .for-screen-1100 {
+        display: inline!important;
+    }
+    .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+        margin-right: -40px!important;
+    }
+    .nav-item {
+        display: none!important;
+    }
+}
+
 @keyframes shine{
   0% {background-position: 0;}
   60% {background-position: 70px;}
