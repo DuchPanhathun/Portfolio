@@ -1,0 +1,131 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  
+.get-intouch {
+    .get-intouch-text {
+      display: flex;
+      justify-content: center;
+      color: #c1c1c1;
+      font-size: 30px;
+      font-family: Roboto;
+      font-weight: 500;
+    }
+}
+.section4 {
+    background-color: #000;
+}
+.section4-container {
+    padding: 30px 100px 10px 100px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    .animation-title-achievement {
+        color: #fff;
+        overflow: hidden;
+    }
+    .animation-title-achievement {
+        margin-top: 30px;
+        margin-bottom: -20px;
+        display: flex;
+    }
+    .animation-title-achievement .title-achievement {
+        background: 50% 100% / 50% 50% no-repeat
+                radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 50px;
+        font-family: Roboto;
+        animation: reveal 3000ms ease-in-out forwards 200ms,
+                  glow 2500ms linear infinite 2000ms;
+    } 
+    .seperate-column {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        gap: 150px;
+        justify-content: center;
+        .left-side-section4 {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          div #Field1, div #Field2, div #Field3 {
+            border-radius: 5px;
+            width: 100%;
+            height: 50px;
+            padding: 0 10px;
+            font-size: 20px;
+            font-family: Roboto;
+            font-weight: 500;
+            color: #fff;
+            background-color: #131313;
+            border: none;
+          }
+          div #Field4 {
+            border-radius: 5px;
+            padding: 10px 10px;
+            background-color: #131313;
+            border: none;
+            color: #fff;
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 500;
+          }
+          div #Field4::placeholder {
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 500;
+          }
+          div #Field1::placeholder, div #Field2::placeholder, div #Field3::placeholder {
+            padding: 0px;
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 500;
+          }
+          div #saveForm {
+            height: 50px;
+            width: 100%;
+            border-radius: 5px;
+            background-color: #2a2a2a;
+            color:#c1c1c1;
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 500;
+            border: none;
+          }
+          div #saveForm:hover {
+            background-color: #c1c1c1;
+            color: #2a2a2a;
+            transition: 0.5s;
+          }
+        }
+        .right-side-section4 {
+          margin-top: 20px;
+          .contact-detail-container {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          margin-top: 25px;
+          .form-label {
+            color: #00abf0;
+            font-size: 20px;
+            font-family: Roboto;
+            font-weight: 300;
+          }
+          .txt-contact-detail {
+            color: #c1c1c1;
+            font-size: 20px;
+            font-family: Roboto;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+}

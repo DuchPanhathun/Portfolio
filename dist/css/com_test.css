@@ -1,0 +1,36 @@
+.carousel-container {
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    .carousel-slides {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      gap: 10px;
+      .previos-slide-carousel, .next-slide-carousel {
+          background: none;
+          border: none;
+          img {
+            color: #e5e5e5;
+          }
+      }
+      .image-achievement {
+        width: 600px;
+        height: 400px;
+      }
+    }
+    .indicators {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        .indicator {
+            border: none;
+            width: 50px;
+            height: 5px;
+            color: #b5b5b5;
+            cursor: pointer;
+        }
+    }
+  }
