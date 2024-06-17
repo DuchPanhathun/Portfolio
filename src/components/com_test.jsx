@@ -17,11 +17,11 @@ const Carousel = ({ slides }) => {
       <div className="carousel-container">
         <div className="carousel-slides">
           <button className="previos-slide-carousel" onClick={prevSlide}>
-            <img src="../img/chevron-left.svg" alt="" />
+            <img src="/img/chevron-left.svg" alt="" />
           </button>
           <img className="slide image-achievement" src={slides[currentSlide]} alt="" />
           <button className="next-slide-carousel" onClick={nextSlide}>
-            <img src="../img/chevron-right.svg" alt="" />
+            <img src="/img/chevron-right.svg" alt="" />
           </button>
         </div>
         <div className="indicators">
@@ -40,20 +40,20 @@ const Carousel = ({ slides }) => {
 
 const ComTest = () => {
   const firstCarouselSlides = [
-    '../img/1st_achieve.jpg',
-    '../img/1st_achieve.jpg',
-    '../img/2nd_achieve.jpg',
+    '/img/1st_achieve.jpg',
+    '/img/1st_achieve.jpg',
+    '/img/2nd_achieve.jpg',
     // Add more first carousel slide image paths as needed
   ];
 
   const secondCarouselSlides = [
-    '../img/3rd_achieve.jpg',
-    '../img/4th_achieve.jpg',
+    '/img/3rd_achieve.jpg',
+    '/img/4th_achieve.jpg',
     // Add more second carousel slide image paths as needed
   ];
   const thirdCarouselSlides = [
-    '../img/3rd_achieve.jpg',
-    '../img/4th_achieve.jpg',
+    '/img/3rd_achieve.jpg',
+    '/img/4th_achieve.jpg',
     // Add more second carousel slide image paths as needed
   ];
 
