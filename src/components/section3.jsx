@@ -56,24 +56,24 @@ const Carousel1 = ({ slides }) => {
 };
 const Section3 = () => {
     const firstCarouselSlides = [
-        '../../public/img/1st_exp.jpg',
-        '../../public/img/1st_exp1.jpg',
+        '/img/1st_exp.jpg',
+        '/img/1st_exp1.jpg',
     ];
     const secondCarouselSlides = [
-        '../../public/img/2nd_exp1.jpg',
-        '../../public/img/2nd_exp3.jpg',
-        '../../public/img/2nd_exp4.jpg',
-        '../../public/img/2nd_exp5.jpg',
-        '../../public/img/2nd_exp6.jpg',
-        '../../public/img/2nd_exp7.jpg',
+        '/img/2nd_exp1.jpg',
+        '/img/2nd_exp3.jpg',
+        '/img/2nd_exp4.jpg',
+        '/img/2nd_exp5.jpg',
+        '/img/2nd_exp6.jpg',
+        '/img/2nd_exp7.jpg',
     ];
     const thirdCarouselSlides = [
-        '../../public/img/3rd_exp.jpg',
-        '../../public/img/3rd_exp1.jpg',
-        '../../public/img/3rd_exp2.jpg',
+        '/img/3rd_exp.jpg',
+        '/img/3rd_exp1.jpg',
+        '/img/3rd_exp2.jpg',
     ];
     const fourthCarouselSlides = [
-        '../../public/img/4th_exp.jpg',
+        '/img/4th_exp.jpg',
     ];
     useEffect(() => {
         const CONTAINER = document.querySelector('.container');

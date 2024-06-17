@@ -17,11 +17,11 @@ const Carousel = ({ slides }) => {
       <div className="carousel-container">
         <div className="carousel-slides">
           <button className="previos-slide-carousel" onClick={prevSlide}>
-            <img src="../../public/img/chevron-left.svg" alt="" />
+            <img src="/img/chevron-left.svg" alt="" />
           </button>
           <img className="slide image-achievement" src={slides[currentSlide]} alt="" />
           <button className="next-slide-carousel" onClick={nextSlide}>
-            <img src="../../public/img/chevron-right.svg" alt="" />
+            <img src="/img/chevron-right.svg" alt="" />
           </button>
         </div>
         <div className="indicators">
@@ -40,47 +40,47 @@ const Carousel = ({ slides }) => {
 
 const Section2 = () => {
   const firstCarouselSlides = [
-    '../../public/img/1st_achieve.jpg',
-    '../../public/img/1st_achieve1.jpg',
-    '../../public/img/1st_achieve2.jpg',
-    '../../public/img/1st_achieve3.jpg',
-    '../../public/img/1st_achieve4.jpg',
+    '/img/1st_achieve.jpg',
+    '/img/1st_achieve1.jpg',
+    '/img/1st_achieve2.jpg',
+    '/img/1st_achieve3.jpg',
+    '/img/1st_achieve4.jpg',
   ];
   const secondCarouselSlides = [
-    '../../public/img/2nd_achieve.jpg',
-    '../../public/img/2nd_achieve1.jpg',
-    '../../public/img/2nd_achieve2.jpg',
+    '/img/2nd_achieve.jpg',
+    '/img/2nd_achieve1.jpg',
+    '/img/2nd_achieve2.jpg',
   ];
   const thirdCarouselSlides = [
-    '../../public/img/3rd_achieve.jpg',
+    '/img/3rd_achieve.jpg',
   ];
   const fourthCarouselSlides = [
-    '../../public/img/4th_achieve.jpg',
-    '../../public/img/4th_achieve1.jpg',
-    '../../public/img/4th_achieve2.jpg',
-    '../../public/img/4th_achieve3.jpg',
+    '/img/4th_achieve.jpg',
+    '/img/4th_achieve1.jpg',
+    '/img/4th_achieve2.jpg',
+    '/img/4th_achieve3.jpg',
   ];
   const fifthCarouselSlides = [
-    '../../public/img/5th_achieve.jpg',
-    '../../public/img/5th_achieve1.jpg',
-    '../../public/img/5th_achieve2.jpg',
+    '/img/5th_achieve.jpg',
+    '/img/5th_achieve1.jpg',
+    '/img/5th_achieve2.jpg',
   ];
   const sixthCarouselSlides = [
-    '../../public/img/6th_achieve.jpg',
+    '/img/6th_achieve.jpg',
   ];
   const seventhCarouselSlides = [
-    '../../public/img/7th_achieve.jpg',
+    '/img/7th_achieve.jpg',
   ];
   const eighthCarouselSlides = [
-    '../../public/img/8th_achieve.jpg',
+    '/img/8th_achieve.jpg',
   ];
   const ninethCarouselSlides = [
-    '../../public/img/9th_achieve.jpg',
+    '/img/9th_achieve.jpg',
   ];
   const tenthCarouselSlides = [
-    '../../public/img/12th_achieve.jpg',
-    '../../public/img/11th_achieve.jpg',
-    '../../public/img/10th_achieve.jpg',
+    '/img/12th_achieve.jpg',
+    '/img/11th_achieve.jpg',
+    '/img/10th_achieve.jpg',
   ];
   useEffect(() => {
     const elementsToObserve = document.querySelectorAll('section[id]'),
