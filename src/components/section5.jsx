@@ -8,76 +8,76 @@ const Section5 = () => {
                 <h1 className='title-achievement'>My Skill</h1>
             </div>
             <div className="section5-container">
-                <div class="wrapper">
-                    <div class="container">
-                        <div class="label one">HTML</div>
-                        <div class="progress-bar">
-                            <div class="progress fill-1">
-                                <div class="glow"></div>
+                <div className="wrapper">
+                    <div className="container">
+                        <div className="label one">HTML</div>
+                        <div className="progress-bar">
+                            <div className="progress fill-1">
+                                <div className="glow"></div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="container">
-                        <div class="label two">CSS</div>
-                        <div class="progress-bar">
-                            <div class="progress fill-2">
-                                <div class="glow"></div>
+                    <div className="container">
+                        <div className="label two">CSS</div>
+                        <div className="progress-bar">
+                            <div className="progress fill-2">
+                                <div className="glow"></div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="container">
-                        <div class="label three">JavaScript</div>
-                        <div class="progress-bar">
-                            <div class="progress fill-3">
-                                <div class="glow"></div>
+                    <div className="container">
+                        <div className="label three">JavaScript</div>
+                        <div className="progress-bar">
+                            <div className="progress fill-3">
+                                <div className="glow"></div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="container">
-                        <div class="label four">Bootstrap</div>
-                        <div class="progress-bar">
-                            <div class="progress fill-4">
-                                <div class="glow"></div>
+                    <div className="container">
+                        <div className="label four">Bootstrap</div>
+                        <div className="progress-bar">
+                            <div className="progress fill-4">
+                                <div className="glow"></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="wrapper">
-                <div class="container">
-                        <div class="label five">React</div>
-                        <div class="progress-bar">
-                            <div class="progress fill-5">
-                                <div class="glow"></div>
+                <div className="container">
+                        <div className="label five">React</div>
+                        <div className="progress-bar">
+                            <div className="progress fill-5">
+                                <div className="glow"></div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="container">
-                        <div class="label six">Python</div>
-                        <div class="progress-bar">
-                            <div class="progress fill-6">
-                                <div class="glow"></div>
+                    <div className="container">
+                        <div className="label six">Python</div>
+                        <div className="progress-bar">
+                            <div className="progress fill-6">
+                                <div className="glow"></div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="container">
-                        <div class="label seven">C++</div>
-                        <div class="progress-bar">
-                            <div class="progress fill-7">
-                                <div class="glow"></div>
+                    <div className="container">
+                        <div className="label seven">C++</div>
+                        <div className="progress-bar">
+                            <div className="progress fill-7">
+                                <div className="glow"></div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="container">
-                        <div class="label eight">Figma</div>
-                        <div class="progress-bar">
-                            <div class="progress fill-8">
-                                <div class="glow"></div>
+                    <div className="container">
+                        <div className="label eight">Figma</div>
+                        <div className="progress-bar">
+                            <div className="progress fill-8">
+                                <div className="glow"></div>
                             </div>
                         </div>
                     </div>
