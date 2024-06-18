@@ -43,10 +43,6 @@ const Nav = () => {
         };
     }, []);
 
-    const handleClose = () => {
-        setOpen(false);
-    };
-
     const DrawerList = (
         <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
             <List style={{marginTop: "30%"}}>

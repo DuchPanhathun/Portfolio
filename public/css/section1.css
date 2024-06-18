@@ -50,6 +50,8 @@
             font-size: 30px;
             font-weight: 500;
             color:#00abf0;
+            max-width: 575px;
+            width: 100%;
         }
         .personal-info:first-child {
             color: #00abf0;
@@ -59,7 +61,8 @@
             font-family: Roboto;
             font-size: 20px;
             font-weight: 300;
-            width: 600px;
+            max-width: 600px;
+            width: 100%;
             color:#c6c7ca;
         }
         .group-btn {
@@ -71,66 +74,38 @@
                 padding: 15px 30px;
                 font-family: Roboto;
                 font-weight: 300;
-            }
-            .contact-me-btn{
                 position: relative;
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
-                background: #00abf0;
                 border: 2px solid #00abf0;
                 border-radius: 8px;
                 font-size: 19px;
-                color: #081b29;
                 text-decoration: none;
                 font-weight: 600;
                 letter-spacing: 1px;
                 z-index: 1;
                 overflow: hidden;
+                transition: all 0.3s ease-in-out;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             }
-
-            .download-cv-btn {
-                position: relative;
-                display: inline-flex;
-                justify-content: center;
-                align-items: center;
+            .contact-me-btn {
                 background: #00abf0;
-                border: 2px solid #00abf0;
-                border-radius: 8px;
-                font-size: 19px;
                 color: #081b29;
-                text-decoration: none;
-                font-weight: 600;
-                letter-spacing: 1px;
-                z-index: 1;
-                overflow: hidden;
             }
-
             .download-cv-btn {
                 background: transparent;
                 color: #00abf0;
             }
-            .download-cv-btn::before {
-                color: #00abf0;
-            }
-            .download-cv-btn::before {
-                color: #c7cbce;
-            }
-            a::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 0;
-                height: 100%;
-                background: #c7cbce;
-                z-index: -1;
-                transition: .5s;
-            }
-            a:hover::before {
-                width: 100%;
+            a:hover {
+                background: #081b29;
+                color: #ffffff;
+                border-color: #081b29;
+                transform: translateY(-5px);
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
             }
         }
+        
         .contact-function {
             display: flex;
             flex-direction: row;
@@ -152,27 +127,71 @@
                 text-decoration: none;
                 z-index: 1;
                 overflow: hidden;
+                transition: all 0.3s ease-in-out;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             }
-        
-            a::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 0;
-                height: 100%;
-                background: #c7cbce;
-                z-index: -1;
-                transition: .5s;
+            a:hover {
+                background: #00abf0;
+                color: #ffffff;
+                border-color: #00abf0;
+                transform: translateY(-5px);
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
             }
-            
-            a:hover::before {
-                width: 100%;
-        
+        }  
+    }
+}
+@media screen and (min-width: 250px) and (max-width: 700px){
+    .section1 {
+        .section1-container {
+            margin: 5%!important;
+            .column-info-1 {                
+                display: flex;
+                flex-direction: column;
+                align-items: center!important;
+                .container-personal-info {
+                    flex-direction: column;
+                    align-items: center;
+                    p {
+                        text-align: center;
+                    }
+                    .animation {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+                .personal-info {
+                    text-align: center;
+                }
+                .detail-info {
+                    text-align: center;
+                }
             }
         }
     }
 }
+
+@media screen and (max-width: 450px) {
+    .section1 {
+        .animation {
+            height:40px!important;
+            margin-left: 0.7rem!important;
+            margin-top: 3px!important;
+        }
+        .animation > div > div {
+            padding: 0.17rem 0.52rem!important;
+            height: 40px!important;
+            margin-bottom: 37px!important;
+        }
+        .position-animation {
+            font-size: 25px;
+        }
+        .group-btn {
+            flex-direction: column!important;
+        }
+    }
+}
+
 @keyframes text-animation {
     0% {margin-top: 0;}
     10% {margin-top: 0;}

@@ -1,0 +1,58 @@
+.sliders3 {
+    .carousel {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+      }
+      
+      .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+      
+      .carousel-item {
+        flex: 1 0 25%; /* 4 items per slide */
+        box-sizing: border-box;
+        padding: 10px;
+      }
+      
+      .carousel-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 1;
+      }
+      
+      .carousel-control.prev {
+        left: 10px;
+      }
+      
+      .carousel-control.next {
+        right: 10px;
+      }
+      
+      .indicators {
+        text-align: center;
+        margin-top: 10px;
+      }
+      
+      .indicator {
+        background-color: #ddd;
+        border: none;
+        display: inline-block;
+        margin: 0 2px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      
+      .indicator.active {
+        background-color: #333;
+      }
+}

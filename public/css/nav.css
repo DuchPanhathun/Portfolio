@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+body {
+    background-color: black;
+}
 .navbar {
     position: fixed;
     z-index: 10000;
@@ -133,7 +136,7 @@
         display: inline!important;
     }
     .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
-        margin-right: -40px!important;
+        margin-right: -20px!important;
     }
     .nav-item {
         display: none!important;

@@ -1,10 +1,14 @@
 import React from "react";
-import ComTest from "../components/com_test";
+import Nav from "../components/nav";
+import Section1 from "../components/section1.jsx";
+import Section3 from "../components/section3.jsx";
 
 const TestPage = () => {
     return (
         <div>
-            <ComTest />
+            <Nav/>
+            <Section1/>
+            <Section3/>
         </div>
     );
 }
