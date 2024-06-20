@@ -8,14 +8,33 @@ import Section4 from "../components/section4.jsx";
 import Section5 from "../components/section5.jsx";
 
 const Home = () => {
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         entry.target.classList.add('show');
+  //       } else {
+  //         entry.target.classList.remove('show');
+  //       }
+  //     });
+  //   });
+
+  //   const hiddenElements = document.querySelectorAll('.hidden');
+  //   hiddenElements.forEach((el) => observer.observe(el));
+
+  //   // Cleanup observer on component unmount
+  //   return () => {
+  //     hiddenElements.forEach((el) => observer.unobserve(el));
+  //   };
+  // }, []);
   return (
     <div >
         <Nav />
         <Section1 />
-        <Section3 />
-        <Section2 />
-        <Section5 />
-        <Section4 />
+        <Section3/>
+        <Section2/>
+        <Section5/>
+        <Section4/>
     </div>
   );
 }

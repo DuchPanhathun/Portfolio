@@ -56,7 +56,6 @@ const Carousel1 = ({ slides }) => {
 };
 const Section3 = () => {
     const firstCarouselSlides = [
-        '/img/1st_exp.jpg',
         '/img/1st_exp1.jpg',
     ];
     const secondCarouselSlides = [
