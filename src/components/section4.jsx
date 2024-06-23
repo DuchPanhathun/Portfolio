@@ -12,6 +12,7 @@ const Section4 = () => {
             .then((result) => {
                 alert("Message Sent Successfully!");
             }, (error) => {
+                console.error("Error:", error.text);
                 alert("Failed to Send Message, please try again.");
             });
     };
