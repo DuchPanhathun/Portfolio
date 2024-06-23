@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 import "../../public/css/section4.css";
 
 const Section4 = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+            .then((result) => {
+                alert("Message Sent Successfully!");
+            }, (error) => {
+                alert("Failed to Send Message, please try again.");
+            });
+    };
+
     return (
         <div className="section4" id="section4">
             <div className="section4-container">
@@ -10,24 +24,26 @@ const Section4 = () => {
                 </div>
                 <div className="seperate-column">
                     <div className="left-side-section4">
-                        <div className="get-intouch">
-                            <p className="get-intouch-text">Get In Touch</p>
-                        </div>
-                        <div>
-                            <input type="text" id="Field1" placeholder="Your Name"/>
-                        </div>
-                        <div>
-                            <input type="email" id="Field2" placeholder="Your Email"/> 
-                        </div>
-                        <div>
-                            <input type="tel" id="Field3" placeholder="Your Phone"/>
-                        </div>
-                        <div>
-                            <textarea id="Field4" name="Field4" spellCheck="true" rows="10" cols="50" placeholder="Write a Message"></textarea>
-                        </div>
-                        <div>
-                            <input id="saveForm" name="saveForm" type="submit" value="Send Message" />
-                        </div>
+                        <form ref={form} onSubmit={sendEmail}>
+                            <div className="get-intouch">
+                                <p className="get-intouch-text">Get In Touch</p>
+                            </div>
+                            <div>
+                                <input type="text" name="user_name" placeholder="Your Name" required />
+                            </div>
+                            <div>
+                                <input type="email" name="user_email" placeholder="Your Email" required />
+                            </div>
+                            <div>
+                                <input type="tel" name="user_phone" placeholder="Your Phone" />
+                            </div>
+                            <div>
+                                <textarea name="message" spellCheck="true" rows="10" cols="50" placeholder="Write a Message" required></textarea>
+                            </div>
+                            <div>
+                                <input type="submit" value="Send Message" />
+                            </div>
+                        </form>
                     </div>
                     <div className="right-side-section4">
                         <div className="get-intouch">
@@ -44,9 +60,9 @@ const Section4 = () => {
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     );
 }
+
 export default Section4;
