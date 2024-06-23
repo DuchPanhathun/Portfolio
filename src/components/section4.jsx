@@ -29,19 +29,19 @@ const Section4 = () => {
                                 <p className="get-intouch-text">Get In Touch</p>
                             </div>
                             <div>
-                                <input type="text" name="user_name" placeholder="Your Name" required />
+                                <input type="text" id="Field1" name="user_name" placeholder="Your Name" required />
                             </div>
                             <div>
-                                <input type="email" name="user_email" placeholder="Your Email" required />
+                                <input type="email" id="Field2" name="user_email" placeholder="Your Email" required />
                             </div>
                             <div>
-                                <input type="tel" name="user_phone" placeholder="Your Phone" />
+                                <input type="tel" id="Field3" name="user_phone" placeholder="Your Phone" />
                             </div>
                             <div>
-                                <textarea name="message" spellCheck="true" rows="10" cols="50" placeholder="Write a Message" required></textarea>
+                                <textarea name="message" id="Field4" spellCheck="true" rows="10" cols="50" placeholder="Write a Message" required></textarea>
                             </div>
                             <div>
-                                <input type="submit" value="Send Message" />
+                                <input type="submit" id="saveForm" value="Send Message" />
                             </div>
                         </form>
                     </div>

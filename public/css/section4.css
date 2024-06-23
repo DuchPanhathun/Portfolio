@@ -51,7 +51,7 @@
         width: 100%;
         gap: 150px;
         justify-content: center;
-        .left-side-section4 {
+        .left-side-section4 form{
           margin-top: 20px;
           display: flex;
           flex-direction: column;
