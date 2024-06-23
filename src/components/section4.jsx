@@ -8,7 +8,7 @@ const Section4 = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+        emailjs.sendForm('service_cdsrz4u', 'template_60er129', form.current, 'N3emM9Q550n4JvIz4')
             .then((result) => {
                 alert("Message Sent Successfully!");
             }, (error) => {
