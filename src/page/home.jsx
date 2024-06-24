@@ -30,7 +30,7 @@ const Home = () => {
   // }, []);
   return (
     <div>
-      {/* <Menu/> */}
+      <Menu/>
       <Nav/>
       <Section1 />
       <Section3/>
