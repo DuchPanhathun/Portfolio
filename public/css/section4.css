@@ -56,7 +56,7 @@
           display: flex;
           flex-direction: column;
           gap: 20px;
-          div #Field1, div #Field2, div #Field3 {
+          div #name, div #email, div #subject {
             border-radius: 5px;
             width: 100%;
             height: 50px;
@@ -68,7 +68,7 @@
             background-color: #131313;
             border: none;
           }
-          div #Field4 {
+          div #message {
             border-radius: 5px;
             padding: 10px 10px;
             background-color: #131313;
@@ -78,12 +78,12 @@
             font-size: 20px;
             font-weight: 500;
           }
-          div #Field4::placeholder {
+          div #message::placeholder {
             font-family: Roboto;
             font-size: 20px;
             font-weight: 500;
           }
-          div #Field1::placeholder, div #Field2::placeholder, div #Field3::placeholder {
+          div #name::placeholder, div #email::placeholder, div #subject::placeholder {
             padding: 0px;
             font-family: Roboto;
             font-size: 20px;

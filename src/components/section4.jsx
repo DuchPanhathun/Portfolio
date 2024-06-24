@@ -30,16 +30,16 @@ const Section4 = () => {
                                 <p className="get-intouch-text">Get In Touch</p>
                             </div>
                             <div>
-                                <input type="text" id="Field1" name="user_name" placeholder="Your Name" required />
+                                <input type="text" id="name" name="name" placeholder="Name" required />
                             </div>
                             <div>
-                                <input type="email" id="Field2" name="user_email" placeholder="Your Email" required />
+                                <input type="email" id="email" name="email" placeholder="Email" required />
                             </div>
                             <div>
-                                <input type="tel" id="Field3" name="user_phone" placeholder="Your Phone" />
+                                <input type="text" id="subject" name="subject" placeholder="Subject" />
                             </div>
                             <div>
-                                <textarea name="message" id="Field4" spellCheck="true" rows="10" cols="50" placeholder="Write a Message" required></textarea>
+                                <textarea name="message" id="message" spellCheck="true" rows="10" cols="50" placeholder="Write a Message" required></textarea>
                             </div>
                             <div>
                                 <input type="submit" id="saveForm" value="Send Message" />
