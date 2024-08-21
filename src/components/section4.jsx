@@ -25,7 +25,7 @@ const Section4 = () => {
                 </div>
                 <div className="seperate-column">
                     <div className="left-side-section4">
-                        <form ref={form} onSubmit={sendEmail}>
+                        <form ref={form} onSubmit={sendEmail}>      
                             <div className="get-intouch">
                                 <p className="get-intouch-text">Get In Touch</p>
                             </div>
