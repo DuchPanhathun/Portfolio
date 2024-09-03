@@ -96,7 +96,7 @@ const Section6 = () => {
                         <img src="https://unsplash.it/1920/1080?random=6" loading="eager" alt="Nesciunt Consectetur Similique Sit" className="image" />
                         <div className="content">
                             <h2 className="title">"The Migration"</h2>
-                            <p className="description">
+                            <p className="description"> so yg bek knea pi lv tv derm3 o mean pel rean jrern jeang mun phg
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
                             </p>
                             <button>Read More</button>
