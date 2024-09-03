@@ -1,5 +1,3 @@
-import { IonIcon } from 'ionicons';
-import { arrowBackOutline, arrowForwardOutline } from 'ionicons/icons';
 import React, { useEffect, useRef } from "react";
 import "../../public/css/section6.scss";
 
@@ -7,6 +5,18 @@ const Section6 = () => {
     const sliderRef = useRef(null);
 
     useEffect(() => {
+        // Load the Ionicons script
+        const script = document.createElement("script");
+        script.type = "module";
+        script.src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js";
+        document.body.appendChild(script);
+
+        const noModuleScript = document.createElement("script");
+        noModuleScript.nomodule = true;
+        noModuleScript.src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js";
+        document.body.appendChild(noModuleScript);
+
+        // Slider logic
         const slider = sliderRef.current;
         const activate = (e) => {
             const items = slider.querySelectorAll(".item");
@@ -20,8 +30,11 @@ const Section6 = () => {
 
         document.addEventListener("click", activate, false);
 
+        // Cleanup
         return () => {
             document.removeEventListener("click", activate, false);
+            document.body.removeChild(script);
+            document.body.removeChild(noModuleScript);
         };
     }, []);
 
@@ -92,10 +105,10 @@ const Section6 = () => {
                 </div>
                 <nav className="nav">
                     <button className="btn prev">
-                        <IonIcon icon={arrowBackOutline} />
+                        <i class='bx bxs-left-arrow-circle' name="arrow-back-outline"></i>
                     </button>
                     <button className="btn next">
-                        <IonIcon icon={arrowForwardOutline} />
+                        <i class='bx bxs-right-arrow-circle' name="arrow-forward-outline"></i>
                     </button>
                 </nav>
             </main>
