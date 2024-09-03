@@ -7,6 +7,7 @@ import Section3 from "../components/section3.jsx";
 import Section4 from "../components/section4.jsx";
 import Section5 from "../components/section5.jsx";
 import Menu from "../components/menu.jsx";
+import Section6 from "../components/section6.jsx";
 
 const Home = () => {
   // useEffect(() => {
@@ -33,6 +34,7 @@ const Home = () => {
       {/* <Menu/> */}
       <Nav/>
       <Section1 />
+      <Section6/>
       <Section3/>
       <Section2/>
       <Section5/>
