@@ -24,7 +24,7 @@ const Section1 = () => {
                     <div className="contact-function">
                         <a href="https://www.instagram.com/thun_nani?igsh=MTN4dmZ6cXkxM2EzMA==" className="glow-effect"><i className='bx bxl-instagram'></i></a>
                         <a href="https://www.facebook.com/profile.php?id=100026153991813&mibextid=9R9pXO" className="glow-effect"><i className='bx bxl-facebook'></i></a>
-                        <a href="t.me/nhacool" className="glow-effect"><i className='bx bxl-telegram'></i></a>
+                        <a href="https://www.t.me/nhacool" className="glow-effect"><i className='bx bxl-telegram'></i></a>
                         <a href="https://www.linkedin.com/in/duch-panhathun-406336235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="glow-effect"><i className='bx bxl-linkedin' ></i></a>
                     </div>
                 </div>

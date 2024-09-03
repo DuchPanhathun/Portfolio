@@ -155,10 +155,10 @@
     display: flex;
     gap: 0.5rem;
     position: absolute;
-    bottom: 2rem;
+    bottom: -50rem;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 5;
+    z-index: 10000;
     user-select: none;
     border-radius: 100vw;
     padding: 0.25rem;  
