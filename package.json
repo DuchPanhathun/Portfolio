@@ -25,6 +25,7 @@
     "create-vite": "^5.1.0",
     "emailjs-com": "^3.2.0",
     "firebase": "^10.7.1",
+    "ionicons": "^7.4.0",
     "leaflet": "^1.9.4",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
