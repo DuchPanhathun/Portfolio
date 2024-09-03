@@ -105,10 +105,10 @@ const Section6 = () => {
                 </div>
                 <nav className="nav">
                     <button className="btn prev">
-                        <i class='bx bxs-left-arrow-circle' name="arrow-back-outline"></i>
+                        <i class='bx bxs-left-arrow-alt prev' name="arrow-back-outline"></i>
                     </button>
                     <button className="btn next">
-                        <i class='bx bxs-right-arrow-circle' name="arrow-forward-outline"></i>
+                        <i class='bx bxs-right-arrow-alt prev' name="arrow-forward-outline"></i>
                     </button>
                 </nav>
             </main>
