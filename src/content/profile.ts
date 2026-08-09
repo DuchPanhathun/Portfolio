@@ -33,8 +33,11 @@ export const profile: Profile = {
     github: "",
     linkedin: "",
 
-    // Add a PDF at `public/cv.pdf` and set this to "/cv.pdf" to show the
-    // "Download CV" button in the hero.
-    cv: "",
+    // Public CV at `public/cv.pdf`. This is the web-safe variant: it shows
+    // city-level location only and says "References available on request",
+    // so neither a home address nor a referee's personal contact details are
+    // published. The unredacted version is kept outside this repo for use in
+    // direct applications.
+    cv: "/cv.pdf",
   },
 };
