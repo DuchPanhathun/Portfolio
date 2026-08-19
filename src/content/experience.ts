@@ -6,7 +6,7 @@ export const experience: ExperienceItem[] = [
     kind: "core",
     role: "Python Engineer",
     org: "Ailsa HQ Limited",
-    period: "25 May 2025 – 31 Aug 2026",
+    period: "25 May 2025 – 23 Aug 2026",
     note: "AI-powered grant-funding discovery and application platform (UK)",
     points: [
       "Built the platform's production scraping tier — five funder-specific scrapers for major UK and EU funding bodies, each with a distinct extraction strategy and dedicated automated test coverage.",
@@ -31,7 +31,7 @@ export const experience: ExperienceItem[] = [
       {
         title: "Plant Disease Recognition (AI/ML)",
         points: [
-          "Trained deep-learning and machine-learning models for crop disease recognition, deployed through a Telegram chatbot — ConvNeXt-Large, EfficientNet-B5 and Swin-B for the cucumber family; Xception and DenseNet121 for cauliflower — achieving higher accuracy than comparable published research.",
+          "Trained and deployed the crop-disease recognition models behind a Telegram chatbot — ConvNeXt-Large and EfficientNet-B5 on a 7-class, 8,223-image cucumber dataset (98.06% test accuracy, 94.82% macro-F1 on 1,235 held-out images), and EfficientNetB3 on a 5-class, 7,754-image cauliflower dataset (99.74% test accuracy, 99.68% macro-F1 on 776 held-out images).",
           "Built complete training pipelines in both PyTorch and TensorFlow/Keras, including focal loss, mixed-precision training, cosine LR scheduling, stratified splitting and augmentation.",
           "Built a weather advisory microservice combining government meteorological data with the Windy API, localised into Khmer.",
           "Built and deployed the bilingual admin/CMS dashboard with automated weather-alert cron jobs.",

@@ -19,7 +19,6 @@ export const skillGroups: SkillGroup[] = [
       "XGBoost",
       "LightGBM",
       "ConvNeXt · EfficientNet · Swin",
-      "Xception · DenseNet",
       "Embeddings & vector search",
       "RAG (LangChain, FAISS)",
       "OpenAI & Anthropic APIs",

@@ -6,7 +6,7 @@ export const profile: Profile = {
   tagline:
     "I build applied machine learning and production web systems — from computer-vision models and LLM pipelines to the APIs, dashboards and payment flows around them.",
   location: "Phnom Penh, Cambodia",
-  email: "duchpanhathun9@gmail.com",
+  email: "duchpanhathun@gmail.com",
   phone: "+855 16 222 054",
 
   about: [

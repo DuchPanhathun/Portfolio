@@ -44,7 +44,7 @@ export const projects: Project[] = [
       "Deep-learning models that identify diseases in cucumber and cauliflower crops from a photo, delivered to farmers through a Telegram chatbot that also recommends treatment.",
     role: "Trained the models and built the surrounding services — the weather advisory microservice and the admin dashboard.",
     highlights: [
-      "Trained deep-learning and machine-learning models across two crop families — ConvNeXt-Large, EfficientNet-B5 and Swin-B for cucumber; Xception and DenseNet121 for cauliflower — achieving higher accuracy than comparable published research.",
+      "Trained and deployed deep-learning models across two crop families — ConvNeXt-Large and EfficientNet-B5 for cucumber (98.06% test accuracy, 94.82% macro-F1 across 7 classes) and EfficientNetB3 for cauliflower (99.74% test accuracy, 99.68% macro-F1 across 5 classes), each measured on a held-out test split.",
       "Built complete training pipelines in both PyTorch and TensorFlow/Keras: focal loss for class imbalance, mixed-precision training, cosine learning-rate scheduling, stratified splitting and augmentation, resolving non-trivial Keras 3.x / HuggingFace compatibility issues along the way.",
       "Built a weather advisory microservice combining government meteorological data with the Windy API, localised into Khmer and deployed as both a scheduled scraper and a REST API.",
       "Built and deployed the bilingual admin dashboard, including automated weather-alert cron jobs.",
