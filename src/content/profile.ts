@@ -3,6 +3,13 @@ import type { Profile } from "./types";
 export const profile: Profile = {
   name: "Duch Panhathun",
   role: "Software Engineer — AI/ML & Full-Stack",
+  displayRoles: [
+    "AI / ML Engineer",
+    "Full-Stack Developer",
+    "Systems Architect",
+  ],
+  avatarImage: "/images/mypicnbg.png",
+  resumeUrl: "/cv.pdf",
   tagline:
     "I build applied machine learning and production web systems — from computer-vision models and LLM pipelines to the APIs, dashboards and payment flows around them.",
   location: "Phnom Penh, Cambodia",

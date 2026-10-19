@@ -9,6 +9,12 @@
 export type Profile = {
   name: string;
   role: string;
+  /** Rotating titles for rolling kinetic hero text */
+  displayRoles?: string[];
+  /** Optional avatar/portrait image path */
+  avatarImage?: string;
+  /** Optional path or URL to CV/resume */
+  resumeUrl?: string;
   /** One-sentence value proposition shown in the hero. */
   tagline: string;
   /** City-level location only — never a residential address on a public site. */
@@ -56,6 +62,12 @@ export type Project = {
   highlights: string[];
   stack: string[];
   featured: boolean;
+  /** Category classification (e.g. 'AI & Machine Learning', 'Production Web & ERP') */
+  category?: string;
+  /** Numerical order (1..5) for the pinned horizontal scroll showcase */
+  featuredOrder?: number;
+  /** Optional video preview URL */
+  video?: string;
   /** Optional external links. Empty values are hidden. */
   links?: { label: string; href: string }[];
   /**
@@ -147,6 +159,22 @@ export type OpenSourceProject = {
   category?: string;
   /** Whether this project is featured prominently */
   featured?: boolean;
+  /** Numerical order for showcase */
+  featuredOrder?: number;
+  /** Optional video preview */
+  video?: string;
   /** Optional preview image path (e.g. in /public/projects/) */
   image?: string;
 };
+
+export type TechStackItem = {
+  name: string;
+  /** SVG icon identifier, filename, or Devicon CDN URL */
+  icon: string;
+  /** Optional link to official documentation */
+  url?: string;
+  /** Category classification */
+  category?: string;
+};
+
+export type TechStackPyramidRow = TechStackItem[];

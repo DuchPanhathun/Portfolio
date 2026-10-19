@@ -1,11 +1,12 @@
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
-import { Projects } from "@/components/sections/Projects";
-import { OpenSource } from "@/components/sections/OpenSource";
+import { WhatIDo } from "@/components/sections/WhatIDo";
+import { WorkSection } from "@/components/sections/WorkSection";
 import { Experience } from "@/components/sections/Experience";
+import { TechStack } from "@/components/sections/TechStack";
 import { ResearchSection } from "@/components/sections/ResearchSection";
-import { Skills } from "@/components/sections/Skills";
 import { Credentials } from "@/components/sections/Credentials";
+import { CTASection } from "@/components/sections/CTASection";
 import { Contact } from "@/components/sections/Contact";
 import { profile } from "@/content/profile";
 
@@ -42,7 +43,6 @@ function PersonJsonLd() {
   return (
     <script
       type="application/ld+json"
-      // Content is a static, locally-built object — no user input is involved.
       dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
     />
   );
@@ -52,14 +52,17 @@ export default function Home() {
   return (
     <>
       <PersonJsonLd />
-      <Hero />
+      <div id="landingDiv">
+        <Hero />
+      </div>
       <About />
-      <Projects />
-      <OpenSource />
+      <WhatIDo />
+      <WorkSection />
       <Experience />
+      <TechStack />
       <ResearchSection />
-      <Skills />
       <Credentials />
+      <CTASection />
       <Contact />
     </>
   );

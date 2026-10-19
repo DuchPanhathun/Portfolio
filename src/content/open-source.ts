@@ -22,6 +22,7 @@ export const openSourceProjects: OpenSourceProject[] = [
     status: "active",
     category: "AI & Systems",
     featured: true,
+    featuredOrder: 5,
     repoUrl: "https://github.com/DuchPanhathun/ai-thun",
     links: [
       {

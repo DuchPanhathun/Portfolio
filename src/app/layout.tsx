@@ -5,6 +5,10 @@ import "./globals.css";
 import { profile } from "@/content/profile";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { CustomCursor } from "@/components/ui/CustomCursor";
+import { LoadingScreen } from "@/components/ui/LoadingScreen";
+import { SocialBar } from "@/components/ui/SocialBar";
+import { SmoothScroll } from "@/components/ui/SmoothScroll";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,10 +22,6 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-/**
- * Set NEXT_PUBLIC_SITE_URL at build time once the real domain is known so
- * Open Graph/canonical URLs resolve absolutely.
- */
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://duchpanhathun.com";
 
 const description =
@@ -29,7 +29,6 @@ const description =
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  // `role` already contains an em-dash, so a pipe keeps the title readable.
   title: {
     default: `${profile.name} | ${profile.role}`,
     template: `%s | ${profile.name}`,
@@ -72,39 +71,61 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0a0c10",
+  themeColor: "#0b080c",
   colorScheme: "dark",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="en"
-      // The bootstrap script below adds a `js` class to <html> before React
-      // hydrates, so the server and client class lists differ by design.
       suppressHydrationWarning
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
     >
-      <body className="flex min-h-full flex-col">
-        {/*
-          Marks JS as available before first paint, which is what switches on
-          the scroll-reveal start state. Without it the page renders fully
-          visible — content never depends on JavaScript to be readable.
-        */}
-        <Script id="js-flag" strategy="beforeInteractive">
-          {`document.documentElement.classList.add('js')`}
-        </Script>
-        <a
-          href="#main"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-bg"
-        >
-          Skip to content
-        </a>
-        <Header />
-        <main id="main" className="flex-1">
-          {children}
-        </main>
-        <Footer />
+      <body className="relative flex min-h-full flex-col bg-bg text-ink font-sans selection:bg-accent/30 selection:text-white">
+        {/* Initial Interactive Physics Loading Gate */}
+        <LoadingScreen />
+
+        {/* Interactive Custom Magnetic Cursor */}
+        <CustomCursor />
+
+        {/* Lenis Smooth Scrolling Provider */}
+        <SmoothScroll>
+          {/* Atmospheric Ambient Glowing Orbs */}
+          <div className="landing-circle1" aria-hidden="true" />
+          <div className="landing-circle2" aria-hidden="true" />
+
+          {/* Top navigation atmospheric gradient fade */}
+          <div className="nav-top-fade" aria-hidden="true" />
+
+          <Script id="js-flag" strategy="beforeInteractive">
+            {`document.documentElement.classList.add('js')`}
+          </Script>
+
+          <a
+            href="#main"
+            className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-bg"
+          >
+            Skip to content
+          </a>
+
+          {/* Floating Left/Bottom Social & Resume Dock */}
+          <SocialBar />
+
+          {/* Minimalist Floating Header */}
+          <Header />
+
+          <main id="main" className="relative z-10 flex-1">
+            {children}
+          </main>
+
+          {/* Editorial 3-Column Footer */}
+          <Footer />
+        </SmoothScroll>
       </body>
     </html>
   );

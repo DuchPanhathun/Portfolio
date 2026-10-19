@@ -32,6 +32,8 @@ export const projects: Project[] = [
       "Anthropic",
       "Docker",
     ],
+    category: "AI & Cloud Platforms",
+    featuredOrder: 1,
     featured: true,
   },
 
@@ -57,6 +59,8 @@ export const projects: Project[] = [
       "Next.js",
       "Docker",
     ],
+    category: "Computer Vision & Deep Learning",
+    featuredOrder: 2,
     featured: true,
   },
 
@@ -86,6 +90,8 @@ export const projects: Project[] = [
       "Bakong KHQR",
       "OpenAI",
     ],
+    category: "Full-Stack ERP & Payment Rails",
+    featuredOrder: 3,
     featured: true,
   },
 
@@ -103,6 +109,8 @@ export const projects: Project[] = [
       "Containerised the full stack for both development and production.",
     ],
     stack: ["Laravel", "Next.js", "PostgreSQL", "Docker"],
+    category: "Enterprise Systems & Geospatial",
+    featuredOrder: 4,
     featured: true,
   },
 
@@ -120,6 +128,7 @@ export const projects: Project[] = [
       "An interactive province map of the organisation's operating areas, a partner-network directory, and a donor-facing financial transparency section.",
     ],
     stack: ["Next.js", "Supabase", "Tailwind CSS", "Leaflet", "Vercel"],
+    category: "Web & Custom CMS",
     featured: false,
   },
 
@@ -137,6 +146,7 @@ export const projects: Project[] = [
       "Built reusable parametrised components, scroll-triggered animations and a lazily-hydrated gallery, plus full on-page SEO.",
     ],
     stack: ["Framer", "React", "EmailJS"],
+    category: "Modern Web & Interaction Design",
     featured: false,
   },
 
@@ -154,6 +164,7 @@ export const projects: Project[] = [
       "Also trained an earlier cucumber-family plant-disease model served through a Telegram chatbot.",
     ],
     stack: ["React", "Firebase", "Python", "Flask", "Telegram Bot API"],
+    category: "EdTech & Broadcast Systems",
     featured: false,
   },
 ];
