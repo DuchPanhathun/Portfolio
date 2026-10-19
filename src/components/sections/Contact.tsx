@@ -14,7 +14,7 @@ export function Contact() {
   return (
     <Section
       id="contact"
-      eyebrow="07 — Contact"
+      eyebrow="08 — Contact"
       title="Get in touch"
       intro="Open to engineering roles and project work, particularly where machine learning meets a real product."
     >

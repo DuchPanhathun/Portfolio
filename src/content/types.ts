@@ -110,3 +110,43 @@ export type VolunteerItem = {
   role: string;
   date: string;
 };
+
+export type OpenSourceProjectStatus =
+  | "active"
+  | "completed"
+  | "in-development"
+  | "beta"
+  | "prototype";
+
+export type OpenSourceProject = {
+  slug: string;
+  name: string;
+  /** One-line tagline or purpose statement */
+  tagline: string;
+  /** Comprehensive description of the project */
+  description: string;
+  /** Short summary suitable for card previews */
+  summary: string;
+  /** The creator's role in the project */
+  role: string;
+  /** Time period or release date */
+  period: string;
+  /** Primary repository URL (GitHub) */
+  repoUrl: string;
+  /** Optional live demo, documentation, or deployed URL */
+  demoUrl?: string;
+  /** Additional links (Marketplace, downloads, docs) */
+  links?: { label: string; href: string }[];
+  /** Key technologies, libraries, and frameworks */
+  stack: string[];
+  /** Key architectural decisions, features, and engineering accomplishments */
+  highlights: string[];
+  /** Development and maintenance status */
+  status: OpenSourceProjectStatus;
+  /** Category for grouping (e.g. 'Developer Tools', 'Game Development', 'AI & Systems') */
+  category?: string;
+  /** Whether this project is featured prominently */
+  featured?: boolean;
+  /** Optional preview image path (e.g. in /public/projects/) */
+  image?: string;
+};

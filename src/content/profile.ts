@@ -30,7 +30,7 @@ export const profile: Profile = {
     // Not present in the CV, so intentionally left empty rather than invented.
     // Fill either in and the UI reveals the link automatically.
     // ---------------------------------------------------------------------
-    github: "",
+    github: "https://github.com/DuchPanhathun",
     linkedin: "",
 
     // Public CV at `public/cv.pdf`. This is the web-safe variant: it shows

@@ -6,7 +6,7 @@ export function ResearchSection() {
   return (
     <Section
       id="research"
-      eyebrow="04 — Research"
+      eyebrow="05 — Research"
       title="Published research"
       intro="My undergraduate thesis, published independently and DOI-indexed."
     >

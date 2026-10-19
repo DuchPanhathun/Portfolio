@@ -6,6 +6,7 @@ import { profile } from "@/content/profile";
 const NAV = [
   { id: "about", label: "About" },
   { id: "projects", label: "Projects" },
+  { id: "open-source", label: "Open Source" },
   { id: "experience", label: "Experience" },
   { id: "research", label: "Research" },
   { id: "skills", label: "Skills" },

@@ -13,7 +13,7 @@ export function Credentials() {
   return (
     <Section
       id="credentials"
-      eyebrow="06 — Background"
+      eyebrow="07 — Background"
       title="Education & achievements"
     >
       {/* Education */}
